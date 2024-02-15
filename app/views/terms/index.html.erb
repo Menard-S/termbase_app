@@ -1,0 +1,46 @@
+<div class="page-header">
+  <h1>Termbase</h1>
+</div>
+
+<table class="styled-table">
+    <thead>
+        <tr>
+            <th>Source</th>
+            <th>Target</th>
+            <th>Definition</th>
+            <th>Type</th>
+            <th>Geographical Use</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        <% @terms.each do |term| %>
+            <tr>
+                <td><%= term.source_term %></td>
+                <td><%= term.target_term %></td>
+                <td><%= term.definition %></td>
+                <td><%= term.term_type %></td>
+                <td><%= term.geographical_usage %></td>
+                <td class="actions">
+                    <%= link_to edit_term_path(term), class: "btn edit-button" do %>
+                <i class="fas fa-edit"></i>
+                <% end %>
+
+                <%= button_to term_path(term),
+                            method: :delete,
+                            data: { turbo_confirm: "Are you sure you want to delete?" },
+                            class: "btn delete-button" do %>
+                <i class="fas fa-trash"></i>
+                <% end %>
+                                
+                </td>
+            </tr>
+        <% end %>
+    </tbody>
+</table>
+
+<div class="new-term-button">
+  <%= link_to new_term_path, class: "btn btn-primary" do %>
+  <i class="fas fa-plus"></i>
+  <% end %>
+</div>

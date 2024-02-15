@@ -1,0 +1,49 @@
+<%= form_with model: @term, class: "term-form" do |form| %>
+  
+  <% if @term.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@term.errors.count, "error") %> prohibited this post from being saved:</h2>
+      <ul>
+        <% @term.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+  
+  <div class="field">
+    <%= form.label :source_term %>
+    <%= form.text_field :source_term, placeholder: 'Enter source term here' %>
+  </div>
+  
+  <div class="field">
+    <%= form.label :target_term %>
+    <%= form.text_field :target_term, placeholder: 'Enter translation here' %>
+  </div>
+
+    <div class="field">
+    <%= form.label :definition %>
+    <%= form.text_area :definition, placeholder: 'Please include part of speech, followed by a short description of the term in English. You can include example usage.' %>
+  </div>
+
+    <div class="field">
+    <%= form.label :term_type %>
+    <%= form.text_field :term_type, placeholder: 'Ex., General, Legal, Healthcare. DO NOT include client name' %>
+  </div>
+
+    <div class="field">
+    <%= form.label :geographical_usage %>
+    <%= form.text_field :geographical_usage, placeholder: 'ISO 3166 country codes' %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit "Submit",
+    class: "submit-button",
+    data: { turbo_confirm: "Are you sure you want to save?" } %>
+  </div>
+
+<% end %>
+
+<div class="back-link">
+  <%= link_to 'Back to terms', terms_path, class: "back-button" %>
+</div>
