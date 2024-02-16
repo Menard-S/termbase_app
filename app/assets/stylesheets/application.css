@@ -90,11 +90,25 @@
   .edit-button {
     background-color: #f4b400;
     color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
   }
+  
   
   .delete-button {
     background-color: #d32f2f;
     color: white;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  .delete-button:hover {
+    background-color: #b71c1c;
   }
   
   .new-term-button {
@@ -103,7 +117,13 @@
     padding: 10px 15px;
     border-radius: 5px;
     text-decoration: none;
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  .new-term-button:hover {
+    background-color: #1e7e34;
   }
   
   .new-term-link {
@@ -167,9 +187,15 @@
   .back-button {
     background-color: #f4b400;
     color: white;
-    margin-top: 10px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
   }
   
+  .btn.edit-button:hover,
   .back-button:hover {
     background-color: #c69300;
   }
@@ -204,3 +230,32 @@
     border-radius: 5px;
   }
   
+  .term-details {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  .term-detail {
+    margin-bottom: 15px;
+  }
+  
+  .term-detail strong {
+    font-size: 1.1em;
+    color: #333;
+  }
+  
+  .term-detail p {
+    font-size: 1em;
+    color: #666;
+    margin: 5px 0 10px;
+    padding: 0;
+  }
+  
+  .actions {
+    margin-top: 20px;
+    text-align: center;
+  }

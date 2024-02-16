@@ -1,2 +1,44 @@
-<h1>Terms#show</h1>
-<p>Find me in app/views/terms/show.html.erb</p>
+<div class="term-details">
+  <h2 class="term-show-title">Term Details</h2>
+  
+  <div class="term-detail">
+    <strong>Source Term:</strong>
+    <p><%= @term.source_term %></p>
+  </div>
+
+  <div class="term-detail">
+    <strong>Target Term:</strong>
+    <p><%= @term.target_term %></p>
+  </div>
+
+  <div class="term-detail">
+    <strong>Part of Speech:</strong>
+    <p><%= @term.part_of_speech %></p>
+  </div>
+
+  <div class="term-detail">
+    <strong>Definition:</strong>
+    <p><%= @term.definition %></p>
+  </div>
+
+  <div class="term-detail">
+    <strong>Term Type:</strong>
+    <p><%= @term.term_type %></p>
+  </div>
+
+  <div class="term-detail">
+    <strong>Geographical Usage:</strong>
+    <p><%= @term.geographical_usage %></p>
+  </div>
+
+  <%= link_to edit_term_path(@term), class: "btn edit-button" do %>
+    <i class="fas fa-edit"></i> Edit
+  <% end %>
+
+  <div class="back-link">
+    <%= link_to terms_path, class: "btn back-button" do %>
+      <i class="fas fa-arrow-left"></i> Back
+    <% end %>
+  </div>
+  
+</div>

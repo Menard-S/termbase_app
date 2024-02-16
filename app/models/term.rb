@@ -1,6 +1,7 @@
 class Term < ApplicationRecord
     validates :source_term, presence: true
     validates :target_term, presence: true
+    validates :part_of_speech, presence: true
     validates :definition, presence: true,
                             length: { minimum: 5}
     validates :term_type, presence: true

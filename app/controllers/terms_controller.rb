@@ -42,7 +42,7 @@ class TermsController < ApplicationController
   private
 
   def term_params
-    params.require(:term).permit(:source_term, :target_term, :definition, :term_type, :geographical_usage)
+    params.require(:term).permit(:source_term, :target_term, :part_of_speech, :definition, :term_type, :geographical_usage)
   end
 
   def set_term

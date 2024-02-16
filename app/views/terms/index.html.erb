@@ -7,6 +7,7 @@
         <tr>
             <th>Source</th>
             <th>Target</th>
+            <th>Part of Speech</th>
             <th>Definition</th>
             <th>Type</th>
             <th>Geographical Use</th>
@@ -16,8 +17,9 @@
     <tbody>
         <% @terms.each do |term| %>
             <tr>
-                <td><%= term.source_term %></td>
+                <td><%= link_to term.source_term, term_path(term) %></td>
                 <td><%= term.target_term %></td>
+                <td><%= term.part_of_speech %></td>
                 <td><%= term.definition %></td>
                 <td><%= term.term_type %></td>
                 <td><%= term.geographical_usage %></td>
