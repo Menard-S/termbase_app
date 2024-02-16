@@ -94,8 +94,6 @@ GEM
       xpath (~> 3.2)
     concurrent-ruby (1.2.3)
     connection_pool (2.4.1)
-    countries (5.7.1)
-      unaccent (~> 0.3)
     crass (1.0.6)
     date (3.3.4)
     debug (1.9.1)
@@ -231,7 +229,6 @@ GEM
       railties (>= 6.0.0)
     tzinfo (2.0.6)
       concurrent-ruby (~> 1.0)
-    unaccent (0.4.0)
     web-console (4.2.1)
       actionview (>= 6.0.0)
       activemodel (>= 6.0.0)
@@ -257,7 +254,6 @@ PLATFORMS
 DEPENDENCIES
   bootsnap
   capybara
-  countries
   debug
   importmap-rails
   jbuilder
