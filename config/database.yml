@@ -79,6 +79,7 @@ test:
 #
 production:
   <<: *default
-  database: termbase_production
-  username: termbase
-  password: <%= ENV["TERMBASE_DATABASE_PASSWORD"] %>
+  url: <%= ENV['DATABASE_URL'] %>
+  # database: termbase_production
+  # username: termbase
+  # password: <%= ENV["TERMBASE_DATABASE_PASSWORD"] %>
