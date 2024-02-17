@@ -1,0 +1,106 @@
+.actions {
+    white-space: nowrap;
+  }
+  
+.actions form {
+    display: inline;
+  }
+    
+.term-form {
+      max-width: 600px;
+      margin: 20px auto;
+      padding: 20px;
+      background: #f9f9f9;
+      border-radius: 8px;
+    }
+    
+.field {
+      margin-bottom: 15px;
+    }
+    
+.field label {
+      display: block;
+      margin-bottom: 5px;
+    }
+    
+.field input[type="text"],
+.field textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    
+.term-show-title {
+      font-size: 2em;
+      color: #333; 
+      margin-bottom: 0.5em;
+      text-align: center;
+    }
+    
+.term-show-body {
+      font-size: 1.2em;
+      color: #666;
+      line-height: 1.6;
+      margin-top: 0.5em;
+      margin-bottom: 1em;
+      padding: 0 10%;
+      text-align: justify;
+    }
+    
+    
+.term-details {
+      max-width: 600px;
+      margin: 20px auto;
+      padding: 20px;
+      background: #f9f9f9;
+      border-radius: 8px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    }
+    
+.term-detail {
+      margin-bottom: 15px;
+    }
+    
+.term-detail strong {
+      font-size: 1.1em;
+      color: #333;
+    }
+    
+.term-detail p {
+      font-size: 1em;
+      color: #666;
+      margin: 5px 0 10px;
+      padding: 0;
+    }
+    
+.actions {
+      margin-top: 20px;
+      text-align: center;
+    }
+  
+.select-css {
+      color: #888;
+      display: block;
+      width: 100%;
+      padding: 8px 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      background-color: white;
+      box-sizing: border-box;
+    }
+.select-css:not(:placeholder-shown) {
+      color: black;
+    }
+    
+.select-css:focus {
+      border-color: #0056b3;
+      outline: none;
+      box-shadow: 0 0 5px rgba(0, 86, 179, 0.5);
+    }
+  
+.select-css::-ms-expand {
+      color: #888;
+    }

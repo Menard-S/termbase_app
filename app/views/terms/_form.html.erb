@@ -24,7 +24,7 @@
 
   <div class="field">
   <%= form.label :part_of_speech %>
-  <%= form.select :part_of_speech, options_for_select(['Noun', 'Adjective', 'Verb']), { include_blank: 'Select Part of Speech' }, { class: 'select-css' } %>
+  <%= form.select :part_of_speech, options_for_select(['Noun', 'Adjective', 'Verb'], @term.part_of_speech), { include_blank: 'Select Part of Speech' }, { class: 'select-css' } %>
   </div>
 
   <div class="field">
@@ -34,7 +34,7 @@
 
   <div class="field">
     <%= form.label :term_type %>
-    <%= form.select :term_type, options_for_select(['Legal', 'Healthcare', 'General', 'Product/Technology Name']), { include_blank: 'Select Term Type' }, { class: 'select-css' } %>
+    <%= form.select :term_type, options_for_select(['Legal', 'Healthcare', 'General', 'Product/Technology Name'], @term.term_type), { include_blank: 'Select Term Type' }, { class: 'select-css' } %>
   </div>
 
     <div class="field">

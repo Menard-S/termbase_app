@@ -1,0 +1,16 @@
+.notice {
+    color: green;
+    background-color: #bdf5bd;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+  }
+
+#error_explanation {
+    color: red;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid red;
+    border-radius: 5px;
+    background: #ffe6e6;
+  }
