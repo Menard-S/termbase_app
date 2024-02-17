@@ -38,3 +38,29 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
   
+document.addEventListener("DOMContentLoaded", function() {
+  // Get the input field
+  var searchInput = document.getElementById('searchInput');
+
+  // Listen for key up events on the search input
+  searchInput.addEventListener('keyup', function() {
+    // Get the query from the input field
+    var query = searchInput.value.toLowerCase();
+
+    // Get all the table rows in the tbody of the table
+    var rows = document.querySelectorAll(".styled-table tbody tr");
+
+    // Loop through each row
+    rows.forEach(function(row) {
+      // Get the text content of the row
+      var rowText = row.textContent.toLowerCase();
+
+      // If the row's text content contains the query, show the row; otherwise, hide it
+      if (rowText.indexOf(query) !== -1) {
+        row.style.display = "";
+      } else {
+        row.style.display = "none";
+      }
+    });
+  });
+});
