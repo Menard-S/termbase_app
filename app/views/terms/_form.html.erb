@@ -23,18 +23,18 @@
   </div>
 
   <div class="field">
-    <%= form.label :part_of_speech %>
-    <%= form.text_field :part_of_speech, placeholder: 'Enter part of speech' %>
+  <%= form.label :part_of_speech %>
+  <%= form.select :part_of_speech, options_for_select(['Noun', 'Adjective', 'Verb']), { include_blank: 'Select Part of Speech' }, { class: 'select-css' } %>
   </div>
 
-    <div class="field">
+  <div class="field">
     <%= form.label :definition %>
     <%= form.text_area :definition, placeholder: 'Short description of the term in English. You can include example usage.' %>
   </div>
 
-    <div class="field">
+  <div class="field">
     <%= form.label :term_type %>
-    <%= form.text_field :term_type, placeholder: 'Ex., General, Legal, Healthcare. DO NOT include client name' %>
+    <%= form.select :term_type, options_for_select(['Legal', 'Healthcare', 'General', 'Product/Technology Name']), { include_blank: 'Select Term Type' }, { class: 'select-css' } %>
   </div>
 
     <div class="field">

@@ -27,7 +27,7 @@ class TermsController < ApplicationController
   end
 
   def index
-    @terms = Term.order(:source_term)
+    @terms = Term.order('LOWER(source_term)')
   end
 
   def show
