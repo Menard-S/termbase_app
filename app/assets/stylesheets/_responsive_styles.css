@@ -1,0 +1,100 @@
+@media only screen and (max-width: 768px) {
+    .page-header {
+      padding: 10px;
+    }
+    
+    .page-header h1 {
+      font-size: 1.5rem;
+    }
+  
+    .header-content {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    
+    .search-bar {
+      margin-top: 10px;
+      width: 100%;
+    }
+  
+    .new-term-button {
+      left: 20px;
+      bottom: 10px;
+      width: 40px;
+      height: 40px;
+      font-size: 1.2rem;
+    }
+  
+    .styled-table {
+      width: 100%;
+      box-shadow: none;
+    }
+    
+    .styled-table th,
+    .styled-table td {
+      padding: 8px 10px;
+      font-size: 0.8rem;
+    }
+    
+    .actions .btn {
+      margin: 5px 0;
+      display: block;
+    }
+  
+    .term-form,
+    .term-details {
+      padding: 10px;
+      margin: 10px;
+    }
+    
+    .field input[type="text"],
+    .field textarea,
+    .select-css {
+      padding: 8px;
+      font-size: 0.9rem;
+    }
+  }
+  
+  @media only screen and (max-width: 480px) {
+    .page-header h1 {
+      font-size: 1.2rem;
+    }
+    
+    .new-term-button {
+      left: 10px;
+      bottom: 10px;
+      width: 35px;
+      height: 35px;
+      font-size: 1rem;
+    }
+
+    .term-form,
+    .term-details {
+      width: calc(100% - 20px);
+    }
+    
+    .submit-button,
+    .back-button,
+    .edit-button,
+    .delete-button {
+      padding: 12px 15px;
+      font-size: 1rem;
+    }
+
+    .header-content {
+        flex-wrap: nowrap;
+        justify-content: space-between;
+      }
+    
+      .page-header h1,
+      .search-bar {
+        flex-basis: 50%;
+        flex-grow: 1;
+      }
+    
+      .search-bar {
+        margin-top: 0;
+        margin-left: 0;
+      }
+  }
+  
